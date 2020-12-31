@@ -45,10 +45,6 @@ namespace SeleniumWebDriverAssignment
             driver.Navigate().GoToUrl("https://www.startech.com.bd/account/login");
             driver.FindElement(By.Id("input-email")).Click();
             driver.FindElement(By.Id("input-email")).Click();
-            // ERROR: Caught exception [ERROR: Unsupported command [doubleClick | id=input-email | ]]
-            //driver.FindElement(By.Id("input-email")).Clear();
-            //driver.FindElement(By.Id("input-email")).SendKeys("01863835789");
-           // driver.FindElement(By.Id("input-password")).Clear();
             driver.FindElement(By.Id("input-password")).SendKeys("Abc.1234");
             driver.FindElement(By.XPath("//div[@id='content']/div/div")).Click();
             driver.FindElement(By.Id("input-email")).Clear();
